@@ -1,11 +1,14 @@
 import React from "react";
 import Header from "./components/Header";
+import Profile from "./components/Profile";
+import { RecoilRoot } from "recoil";
 
 function App() {
   return (
-    <div>
-      <Header></Header>
-    </div>
+    <RecoilRoot>
+      <Header />
+      <Profile />
+    </RecoilRoot>
   );
 }
 

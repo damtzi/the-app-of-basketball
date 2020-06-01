@@ -6,7 +6,7 @@ export const Nav = styled.div`
 `;
 
 export const NavHeader = styled.div`
-  padding: 10px 20px;
+  padding: 10px 0px 10px 0px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -29,6 +29,7 @@ export const SearchBar = styled.input`
   border-radius: 3px;
   background-color: #f5f5f5;
   padding: 7px 23px;
+  text-align: center;
 `;
 
 export const Logo = styled.img`
