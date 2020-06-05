@@ -7,9 +7,11 @@ import {
   NavHeader,
   SearchBar,
   NavLeft,
+  NavRight,
   NavCenter,
   Logo,
 } from "./styled/Header";
+import { Button } from "./styled/Button";
 
 function Header() {
   const [player, setPlayer] = useRecoilState(searchedPlayer);
@@ -32,8 +34,18 @@ function Header() {
             type="text"
             placeholder="Enter player's name..."
             onKeyPress={handleUserInput}
-          ></SearchBar>
+          >
+          </SearchBar>
         </NavCenter>
+        <NavRight>
+          <Button
+            href="https://github.com/damtzi/the-app-of-basketball"
+            target="_blank"
+            rel="noopener"
+          >
+            GitHub 📁
+          </Button>
+        </NavRight>
       </NavHeader>
     </Nav>
   );

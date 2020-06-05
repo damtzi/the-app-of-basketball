@@ -23,12 +23,17 @@ export const NavCenter = styled.div`
   text-align: center;
 `;
 
+export const NavRight = styled.div`
+width: 33.333%;
+text-align: right;
+`;
+
 export const SearchBar = styled.input`
   font-size: 16px;
   border: solid 0.5px #dbdbdb;
-  border-radius: 3px;
+  border-radius: 5px;
   background-color: #f5f5f5;
-  padding: 7px 23px;
+  padding: 8px 23px;
   text-align: center;
 `;
 
