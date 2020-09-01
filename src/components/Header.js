@@ -13,7 +13,7 @@ import {
 } from "./styled/Header";
 import { Button } from "./styled/Button";
 
-function Header() {
+const Header = () => {
   const [player, setPlayer] = useRecoilState(searchedPlayer);
 
   // set state only if "Enter" key is pressed
@@ -34,8 +34,7 @@ function Header() {
             type="text"
             placeholder="Enter player's name..."
             onKeyPress={handleUserInput}
-          >
-          </SearchBar>
+          ></SearchBar>
         </NavCenter>
         <NavRight>
           <Button
@@ -49,6 +48,6 @@ function Header() {
       </NavHeader>
     </Nav>
   );
-}
+};
 
 export default Header;
